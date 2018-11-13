@@ -28,7 +28,7 @@ uygulamanın kodu incelenir. Webview üzerinde çalışan uygulama arkada javasc
 
 4. JavaScript koduna bakıldığında(html_actuator.js) obfuscation uygulandığı görülmektedir. Online bir beautifier kullanılarak key ve iv’nin byte array’lerine ulaşılır. 
 
-<img src="https://github.com/stmctf/stmctf18/blob/master/onlineWriteup/MOB/iki_bin_kirk_sekize_kadar/s4.png" width="350">
+![Preview](s4.png)
 
 5. Key ve IV’ye ulaşıldıktan sonra geriye son kısmında çıkan ve 2 byte eksik olan cipher’ı tamamlamak kalıyor. CSS üzerinden butona karşılık gelen objenin opasity’ini sıfıra çektiğimiz zaman metninde tamamı görülebilmektedir.
 
