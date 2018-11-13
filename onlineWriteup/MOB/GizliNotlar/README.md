@@ -4,6 +4,8 @@
 
 Bayrak notların arasındaymış öyle dediler.
 
+İlgili dosya: [mfcsecretnotes.apk](mfcsecretnotes.apk)
+
 ## Çözüm: 
 
 Verilen not uygulaması emulatöre (API 22 iş görecektir) yüklenip çalıştırıldığında ekranda örnek bir not görülecektir. 
@@ -11,7 +13,7 @@ Kullanıcı varolan notu editleyip kaydedebilmekte ve yeni not oluşturabilmekte
 Dolayısıyla arkada bir veri tabanı bulunduğu anlaşılmaktadır. 
 Seçenekler kısmından Secure tuşuna basıldığında kullanıcıdan parola istenmektedir. 
 İlk bakışta buraya brute force yapmak akla gelebilir fakat bu yöntem ile parolanın makul bir zaman içinde çözülmesi mümkün değildir. 
-Uygulamada herhangi bir güvenlik açığı olup olmadığını tespit etmek için Drozer isimli güvenlik değerlendirme aracı kullanılabilir. 
+Uygulamada herhangi bir güvenlik açığı olup olmadığını tespit etmek için [Drozer](https://labs.mwrinfosecurity.com/tools/drozer/) isimli güvenlik değerlendirme aracı kullanılabilir. 
 
 Aşağıdaki adımlar izlenir:
 
