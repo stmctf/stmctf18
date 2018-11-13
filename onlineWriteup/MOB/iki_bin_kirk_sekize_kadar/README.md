@@ -36,4 +36,6 @@ uygulamanın kodu incelenir. Webview üzerinde çalışan uygulama arkada javasc
 
 6. Ardından bulunan IV, key ve şifreli metin ile şifre çözülür ve flag’e ulaşılmış olur.
 
+![Preview](s6.png)
+
 **Flag: STMCTF{Her_s3yiN_1_Ilk1_V@rdiR}**
