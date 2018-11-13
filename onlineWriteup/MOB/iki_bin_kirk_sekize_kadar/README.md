@@ -20,19 +20,19 @@ ekranında görülmektedir. Ardından key 4’er byte şeklinde ekrana basılır
 oradan yakalamak zordur. Ayrıca IV’de aynı şekilde ekranda 4’er byte şeklinde gösterilmektedir. Gösterilen byte’lara ulaşmak için 
 uygulamanın kodu incelenir. Webview üzerinde çalışan uygulama arkada javascript çalıştırmaktadır. 
 
-![Preview](s2.png)
+<img src="https://github.com/stmctf/stmctf18/blob/master/onlineWriteup/MOB/iki_bin_kirk_sekize_kadar/s2.png" width="350">
 
 3. Oyun sonuna gelindiğinde şifreli bir metin “TRY AGAIN” arkasında görülmektedir.Ancak 2 Byte görülmemektedir.
 
-![Preview](s3.png)
+<img src="https://github.com/stmctf/stmctf18/blob/master/onlineWriteup/MOB/iki_bin_kirk_sekize_kadar/s3.png" width="350">
 
 4. JavaScript koduna bakıldığında(html_actuator.js) obfuscation uygulandığı görülmektedir. Online bir beautifier kullanılarak key ve iv’nin byte array’lerine ulaşılır. 
 
-![Preview](s4.png)
+<img src="https://github.com/stmctf/stmctf18/blob/master/onlineWriteup/MOB/iki_bin_kirk_sekize_kadar/s4.png" width="350">
 
 5. Key ve IV’ye ulaşıldıktan sonra geriye son kısmında çıkan ve 2 byte eksik olan cipher’ı tamamlamak kalıyor. CSS üzerinden butona karşılık gelen objenin opasity’ini sıfıra çektiğimiz zaman metninde tamamı görülebilmektedir.
 
-![Preview](s5.png)
+<img src="https://github.com/stmctf/stmctf18/blob/master/onlineWriteup/MOB/iki_bin_kirk_sekize_kadar/s5.png" width="350">
 
 6. Ardından bulunan IV, key ve şifreli metin ile şifre çözülür ve flag’e ulaşılmış olur.
 
