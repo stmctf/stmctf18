@@ -4,7 +4,7 @@
 
 Bayrak notların arasındaymış öyle dediler.
 
-İlgili dosya: [mfcsecretnotes.apk](mfcsecretnotes.apk)
+Soruda verilen dosya: [mfcsecretnotes.apk](mfcsecretnotes.apk)
 
 ## Çözüm: 
 
