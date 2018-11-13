@@ -1,8 +1,10 @@
 ## Soru İsmi: KolaySoruYahu
-
+Hazırlayan: [mertcan](https://twitter.com/mertcancoskuner)
 ## Soru Metni: 
 
 Uygulamanın içinden bayrağı al. Isınma olsun.
+
+Soruda verilen dosya: [kolaysoruyahu.apk](kolaysoruyahu.apk)
 
 ## Çözüm: 
 
