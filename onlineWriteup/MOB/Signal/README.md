@@ -2,6 +2,8 @@
 
 ## Soru Metni: 
 
+Soruda verilen dosya: [Signal.apk](Signal.apk)
+
 ## Çözüm: 
 
 Apk decompile edildiğinde görülen
