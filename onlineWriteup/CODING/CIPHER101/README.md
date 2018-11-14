@@ -41,7 +41,7 @@ Programlayacağın şifreleme algoritması bir Transposition Cipher* türü olan
 - Matrise sağ üstten başlayarak dışarıdan içeriye doğru saat yönünde döndürme işlemi yapıldığında şifreli metin aşağıdaki gibi görünmektedir
     ```
     EKNNIYAMPAYKBUBIRORNINAPRIT
-    ``
+    ```
 - Bayrağın bulunması için aşağıdaki metinler anlatılan algoritma ile işlenerek uç uca ekleme ile birleştirilmelidir. 
 
 **Bayrağın bulunması ile ilgili örnek**
@@ -62,6 +62,43 @@ Programlayacağın şifreleme algoritması bir Transposition Cipher* türü olan
 
 ## Çözüm: 
 
+```python
+def sifrele(_input):
+    def spiral(matris):
+        if matris:
+            yield from matris.pop()
+            # clockwise
+            yield from spiral(list(zip(*matris[::-1]))) # reverse + transpose
+    bayrak, x, y, yon = _input.rsplit(" ", 3)
+    bayrak, x, y = bayrak[1:-1].upper(), int(x[1:-1]), int(y[:-1])
+    bayrak = [m for m in bayrak if m in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
+    bayrak += ["N"] * (x * y - len(bayrak))
+    matris = [bayrak[n::x] for n in range(x)]
+    if yon == "terssaatyonu":
+        matris = list(zip(*matris[::-1]))[::-1]
+    print("".join(spiral(matris)))
 
+
+
+sifrele('''"ARADIGIN GUC ICINDE" (6, 3) saatyonu''')
+print('\n')
+
+sifrele('''"BIRAZ EKSINA NE DERSIN" (10, 2) terssaatyonu''')
+print('\n')
+
+sifrele('''"kusura bakmayin ben korum" (5, 5) saatyonu''')
+print('\n')
+
+sifrele('''"daha once kafa binbesyuz kullandin mi" (7, 5) terssaatyonu''')
+print('\n')
+
+sifrele('''"su brosurleri goruyor musun" (6, 4) saatyonu''')
+print('\n')
+
+sifrele('''"BEN GORMUYORUM ISTE" (7, 3) terssaatyonu''')
+print('\n')
+
+sifrele('''"benim adim ersan kuneri kayarsan beklerim" (12, 3) saatyonu''')
+```
 
 **STMCTF{GINEDNICIARADICUGNNISKEZARIBANEDERSINNRMBRNNNMUEAAKUSUKNOKNYBAICNOAHADENKINMINNNDZIBAFAKBULLANUYSESIONUSUMRGUSUBRORYURORLEMROGNEBUSTENNNNIMUROY}**
