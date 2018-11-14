@@ -4,8 +4,6 @@
 
 Bir online kod paylaşım sitesinde “welcometothejungle@outlook.com.tr” mail adresine sahip bir hacker’ın gizli bilgiler paylaştığı tespit edilmiştir. Bu hacker’ın paylaştığı gizli bilgiyi bulabilir misin?
 
-Soruda verilen dosya: [phishing.pcap](phishing.pcap)
-
 ## Çözüm: 
 
 1. Online kod paylaşım sitesi olarak github incelenmeye başlanır.
