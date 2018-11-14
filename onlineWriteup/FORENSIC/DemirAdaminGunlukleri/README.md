@@ -2,9 +2,9 @@
 
 ## Soru Metni: 
 
-Peter'in bilgisayarı ele geçirildi. Bayrağı yakalayıp şifreyi çözebilecek misin?
+Demir adamın kayıt defterinde beklenmeyen değerler var. Kayıtları analiz ederek bayrağı yakalayabilecek misin?
 
-Soruda verilen dosya: tony_stark_triage_image.ad1
+Soruda verilen dosya: tony_stark_triage_image.zip
 
 ## Çözüm: 
 
