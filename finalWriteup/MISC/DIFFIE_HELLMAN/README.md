@@ -9,6 +9,7 @@ Soruda verilen dosya: [index.html](index.html)
 STM'nin anasayfasi (www.stm.com.tr) kaynak kodu uzerinde bazi harfler degistirilmistir. Verilen dosya ile internette CTF gunu yer alan STM  websitesi arasindaki fark incelenmelidir.
 
 2 dosya arasindaki farklara asagidaki arac ile bakabiliriz:
+
 $ diff -u index.html index-modified.html
 
 Ancak cok fazla fark oldugu icin elle yapmak zor olacaktir. Bu yuzden aradaki karakter farkliliklarini cikartan ufak bir python scripti ile flag elde edilebilir.
