@@ -34,4 +34,4 @@ Calistirilan komut:
 
 ![Preview](s1.png)
 
-**Flag = STMCTF{JS-js_JS-alert(1);¯\(-_-)/¯}**
+**Flag = STMCTF{STM_YILDIZLARINI_ARIYOR}**
