@@ -1,4 +1,4 @@
-## Soru İsmi: Rengarengk Dosya
+## Soru İsmi: Rengarenk Dosya
 Hazırlayan: [penny](https://github.com/pennylaneparker)
 ## Soru Metni: 
 
