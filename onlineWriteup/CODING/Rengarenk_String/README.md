@@ -1,4 +1,4 @@
-## Soru İsmi: Rengarengk String
+## Soru İsmi: Rengarenk String
 Hazırlayan: [penny](https://github.com/pennylaneparker)
 ## Soru Metni: 
 
