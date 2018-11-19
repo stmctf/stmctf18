@@ -1,0 +1,1034 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>STM | Anasayfa</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/Templates/Default/assets/css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="/Templates/Default/assets/css/app.min.css">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function ()
+            { (i[r].q = i[r].q || []).push(arguments) }
+            , i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-60282610-5', 'auto');
+        ga('send', 'pageview');
+</script>
+
+    <script type="text/javascript">
+        var url_captcha = '/plugins/generateCaptcha';
+        var iletisimForm = '/plugins/STM.Plugins.Iletisim/Form/ContactForm';
+        var EBulten =  '/EBulten/EBultenKaydet';
+        var suuplierForm = '/Form/SupplierInformationForm';
+    </script>
+
+</head>
+
+
+<body>
+
+    <div class="wrapper">
+        <header id="header">
+            <div class="header-sub">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 search">
+                            <div class="search-content">
+                                <a href="#" class="ui-icons ui-icons-impact hidden-xs hidden-sm collapsed" data-toggle="collapse" data-target="#search"></a>
+                                <a id="mobile-search" href="#" class="ui-icons ui-icons-impact visible-xs visible-sm collapsed" data-toggle="collapse" data-target="#search"></a>
+                            </div>
+                            <div class="search-form collapse" id="search">
+                                
+                                <form class="form" method="get" name="formSearch" id="formSearch" action="/tr/arama/">
+                                    <div class="form-group input-group-lg">
+                                        <input type="text" class="form-control input-lg" name="aranan" id="inputSearchText"  placeholder="Arama Yap...">
+                                        <button type="submit" class="ui-icons ui-icons-search-gray" id="inputSearchButton"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 mobile-menu">
+                            <div class="mobile-menu-content visible-xs visible-sm navbar navbar-default">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <h1 class="logo">
+                                    <a href="/tr" title="STM">
+                                        <img src="/Templates/Default/assets/img/logo-stm.png" alt="STM">
+                                    </a>
+                            </h1>
+                        </div>
+                        <div class="col-md-9 menu-container">
+                            <div class="collapse navbar-collapse menu" id="navbar">
+                                
+
+<nav>
+    <ul>
+                <li class="sub">
+ <a href="/tr/hakkimizda" class="main-link">HAKKIMIZDA</a> 
+                    <ul class="submenu-container">
+                        <li class="single">
+                            <ul>
+                                    <li><a href="/tr/hakkimizda/sirket-profili">Şirket Profili</a></li>
+                                    <li><a href="/tr/hakkimizda/kalite-politikamiz">Kalite Politikamız</a></li>
+                                    <li><a href="/tr/hakkimizda/yonetim-kurulu">Y&#246;netim Kurulu</a></li>
+                                    <li><a href="/tr/hakkimizda/oduller-patentler">&#214;d&#252;ller/Patentler </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub">
+
+  <a href="/tr/faaliyet-alanlari" class="main-link">FAALİYET ALANLARI</a>     
+                    <ul class="submenu-container full">
+                            <li class="col-md-4 single secondary-brand">
+
+ <h2><span>M&#220;HENDİSLİK</span></h2> 
+                                        <h3>Yetkinlikler</h3>
+                                        <ul>
+                                                <li><a href="/tr/faaliyet-alanlari/muhendislik/yetkinlikler/deniz-platformlari">Deniz Platformları</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/muhendislik/yetkinlikler/hava-platformlari">Hava Platformları</a></li>
+                                        </ul>
+                                
+
+                            </li>
+                            <li class="col-md-4 single primary-brand">
+
+ <h2><span>TEKNOLOJİ</span></h2> 
+                                        <h3>Yetkinlikler</h3>
+                                        <ul>
+                                                <li><a href="/tr/faaliyet-alanlari/teknoloji/yetkinlikler/siber-guvenlik">Siber G&#252;venlik</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/teknoloji/yetkinlikler/buyuk-veri-ve-veri-bilimi">B&#252;y&#252;k Veri ve Veri Bilimi</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/teknoloji/yetkinlikler/rf-simulasyon">RF ve Sim&#252;lasyon</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/teknoloji/yetkinlikler/gorev-sistemleri">G&#246;rev Sistemleri</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/teknoloji/yetkinlikler/komuta-kontrol-bilgi-sistemleri">Komuta Kontrol Bilgi Sistemleri</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/teknoloji/yetkinlikler/otonom-sistemler">Otonom Sistemler</a></li>
+                                        </ul>
+                                
+
+                            </li>
+                            <li class="col-md-4 single tertiary-brand">
+
+ <h2><span>DANIŞMANLIK</span></h2> 
+                                        <h3>Yetkinlikler</h3>
+                                        <ul>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/yetkinlikler/danismanlik-hizmetleri">Danışmanlık Hizmetleri</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/yetkinlikler/thinktech-karar-destek-hizmetleri">ThinkTech Karar Destek Hizmetleri</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/yetkinlikler/sertifikasyon-hizmetleri">Sertifikasyon Hizmetleri</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/yetkinlikler/fizibilite-calismalari">Fizibilite &#199;alışmaları </a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/yetkinlikler/sanayilesme-ve-sanayi-koordinasyonu">Sanayileşme ve Sanayi Koordinasyonu </a></li>
+                                        </ul>
+                                        <h3>End&#252;striler</h3>
+                                        <ul>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/endustriler/savunma-ve-havacilik">Savunma ve Havacılık </a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/endustriler/enerji">Enerji</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/endustriler/rayli-sistemler">Raylı Sistemler</a></li>
+                                                <li><a href="/tr/faaliyet-alanlari/danismanlik/endustriler/sivil-havacilik">Sivil Havacılık</a></li>
+                                        </ul>
+                                
+
+                            </li>
+                            <li class="col-md-12 single trio">
+
+ <h2><span>HİZMETLER</span></h2> 
+                                    <ul>
+                                            <li><a href="/tr/faaliyet-alanlari/hizmetler/tedarik-ve-lojistik-hizmetleri">Tedarik ve Lojistik Hizmetleri</a></li>
+                                            <li><a href="/tr/faaliyet-alanlari/hizmetler/ihracat-yonetim-hizmetleri">İhracat Y&#246;netim Hizmetleri</a></li>
+                                            <li><a href="/tr/faaliyet-alanlari/hizmetler/kritik-tesis-ve-test-altyapi-kurulum-hizmetleri">Kritik Tesis ve Test Altyapı Kurulum Hizmetleri</a></li>
+                                            <li><a href="/tr/faaliyet-alanlari/hizmetler/stm-akademi">STM Akademi</a></li>
+                                    </ul>
+                                
+
+                            </li>
+                    </ul>
+                </li>
+                <li class="sub">
+ <a href="/tr/urunler" class="main-link">&#220;R&#220;NLER</a> 
+                    <ul class="submenu-container">
+                        <li class="single">
+                            <ul>
+                                    <li><a href="/tr/urunler/milgem">Milgem</a></li>
+                                    <li><a href="/tr/urunler/focusflite">FocusFlıte</a></li>
+                                    <li><a href="/tr/urunler/terraflite">TerraFlıte</a></li>
+                                    <li><a href="/tr/urunler/aerotab">AeroTab</a></li>
+                                    <li><a href="/tr/urunler/aerosuite">AeroSuıte</a></li>
+                                    <li><a href="/tr/urunler/dikey-ruzgar-tuneli">Dikey R&#252;zgar T&#252;neli</a></li>
+                                    <li><a href="/tr/urunler/overa">Overa</a></li>
+                                    <li><a href="/tr/urunler/siber-fuzyon-merkezi">Siber F&#252;zyon Merkezi</a></li>
+                                    <li><a href="/tr/urunler/siber-guvenlik-karar-destek-sistemi">Siber G&#252;venlik Karar Destek Sistemi</a></li>
+                                    <li><a href="/tr/urunler/dar-duvar-arkasi-radar">DAR - Duvar Arkası Radar</a></li>
+                                    <li><a href="/tr/urunler/opseye">OpsEye</a></li>
+                                    <li><a href="/tr/urunler/tankom">TANKOM</a></li>
+                                    <li><a href="/tr/urunler/aviyonik-islemci-unitesi">Aviyonik İşlemci &#220;nitesi</a></li>
+                                    <li><a href="/tr/urunler/opsmet">OpsMet</a></li>
+                                    <li><a href="/tr/urunler/mekansal-kontrat-yonetim-sistemi">Mekansal Kontrat Y&#246;netim Sistemi</a></li>
+                                    <li><a href="/tr/urunler/fleetics">Fleetics</a></li>
+                                    <li><a href="/tr/urunler/kargu">Kargu</a></li>
+                                    <li><a href="/tr/urunler/alpagu">Alpagu</a></li>
+                                    <li><a href="/tr/urunler/alpagu-blok-ii">Alpagu Blok II</a></li>
+                                    <li><a href="/tr/urunler/togan">Togan</a></li>
+                                    <li><a href="/tr/urunler/m-dar-mini-duvar-arkasi-radar">m-DAR (Mini Duvar Arkası Radar)</a></li>
+                                    <li><a href="/tr/urunler/uhtes-uzaktan-engel-arkasi-hedef-tespit-sistemi">UHTES (Uzaktan Engel Arkası Hedef Tespit Sistemi)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub">
+ <a href="/tr/kariyer" class="main-link">KARİYER</a> 
+                    <ul class="submenu-container">
+                        <li class="single">
+                            <ul>
+                                    <li><a href="/tr/kariyer/ik-politikamiz">İK Politikamız</a></li>
+                                    <li><a href="/tr/kariyer/personel-profili">&#199;alışan Profili </a></li>
+                                    <li><a href="/tr/kariyer/bize-katilin">Bize Katılın </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub">
+ <a href="/tr/haberler" class="main-link">HABERLER</a> 
+                    <ul class="submenu-container">
+                        <li class="single">
+                            <ul>
+                                    <li><a href="/tr/haberler/duyurular">Duyurular </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub">
+ <a href="/tr/yayinlar" class="main-link">YAYINLAR</a> 
+                    <ul class="submenu-container">
+                        <li class="single">
+                            <ul>
+                                    <li><a href="/tr/yayinlar/makalelerraporlar">Makaleler/Raporlar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub">
+ <a href="/tr/iletisim" class="main-link">İLETİŞİM</a> 
+                    <ul class="submenu-container">
+                        <li class="single">
+                            <ul>
+                                    <li><a href="/tr/iletisim/yerleskeler">Yerleşkeler</a></li>
+                                    <li><a href="/tr/iletisim/tedarikci-firma-bilgilendirme-formu">Tedarik&#231;i Firma Bilgilendirme Formu</a></li>
+                                    <li><a href="/tr/iletisim/mesaj-formu">Mesaj Formu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+    </ul>
+</nav>
+                                
+
+                                    <div class="other-links pull-right">
+                                        <a href="https://thinktech.stm.com.tr/" class="other-img" target="_blank"><img src="/Templates/Default/assets/img/stm-thinktech-tr.png" alt="STM Thinktech"></a>
+                                    </div>
+
+                                    <div class="language">
+                                        <a href="/en" class="en">EN</a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section-main main-slider carousel">
+            
+    <div class="slider-container" data-slick data-slick-type="mainSlider">
+            <div class="banner">
+                <div class="banner-img">
+                    <img src="/documents/milgem_anaslider.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h1 class="title">MİLGEM</h1>
+                            <h2 class="sub-title">
+                                <p><span style="color:#FFFFFF;">Ada Sınıfı Korvet Projesi </span></p>
+
+                            </h2>
+                            <div style="height: 80px;"></div>
+                                <a href="https://www.stm.com.tr/tr/urunler/milgem" class="btn btn-transparent lm-t1">DEVAMINI OKU...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner-img">
+                    <img src="/documents/aerotab_anaslider.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h1 class="title">AEROTAB™</h1>
+                            <h2 class="sub-title">
+                                <p>Elektronik Uçuş Çantası (EFB)</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+<p></p>
+
+<p></p>
+
+<p></p>
+                            </h2>
+                            <div style="height: 80px;"></div>
+                                <a href="https://www.stm.com.tr/tr/urunler/aerotab" class="btn btn-transparent lm-t1">DEVAMINI OKU...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner-img">
+                    <img src="/documents/Resimler/Slider_Resimleri/overa_anaslider.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h1 class="title">OVERA</h1>
+                            <h2 class="sub-title">
+                                <p><span style="color:#FFFFFF;">Optimizasyon ve Veri Analizi Platformu</span></p><p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+                            </h2>
+                            <div style="height: 80px;"></div>
+                                <a href="https://www.stm.com.tr/tr/urunler/overa" class="btn btn-transparent lm-t1">DEVAMINI OKU...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner-img">
+                    <img src="/documents/Resimler/Slider_Resimleri/dar_anaslider.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h1 class="title">DAR</h1>
+                            <h2 class="sub-title">
+                                <p><span style="color:#FFFFFF;">Duvar Arkası Radar</span></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+                            </h2>
+                            <div style="height: 80px;"></div>
+                                <a href="https://www.stm.com.tr/tr/urunler/dar-duvar-arkasi-radar" class="btn btn-transparent lm-t1">DEVAMINI OKU...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+            <div class="container slick-arrows hidden-xs hidden-sm">
+                <a href="#" class="slick-prev">
+                    <span class="ui-icons ui-icons-arrow-left"></span>
+                </a>
+                <a href="#" class="slick-next">
+                    <span class="ui-icons ui-icons-arrow-right"></span>
+                </a>
+            </div>
+        </section>
+
+        
+
+        <section class="section-main main-news">
+
+            
+
+
+    <header class="header-legend">
+        <h4 class="title lm-t2">
+            Duyurular
+            <div class="separator separator-headline center"></div>
+        </h4>
+    </header>
+    <div class="carousel-news">
+        <div class="container">
+            <div class="carousel square-arrows">
+                <div class="slider-news" data-slick data-slick-type="news">
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//SATM_HE_0565_derin_arayislar_web_375x210px_231018_375_210.jpg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>STM Denizaltı Tasarımı ve Teknolojileri Yarışmasına başvurular başladı</h5>
+                                    <p><p>STM olarak denizcilik alanında dünya çapında özgün projeler gerçekleştirmek ve bu alandaki tasarımlar ile yeteneklerin geliştirilmesi için ‘Derin Arayışlar’ adıyla denizaltı tasarımı teknolojile...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        27.10.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/stm-denizalti-tasarimi-ve-teknolojileri-yarismasina-basvurular-basladi" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//Bauwebhaber_375_210.jpeg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>STM’den EURONAVAL’da İki İmza</h5>
+                                    <p><p>Paris'te bu yıl 50'ncisi düzenlenen Uluslararası Deniz Savunma Fuarı EURONAVAL'da, STM olarak Bahçeşehir Üniversitesi ve Alman Hensoldt firması ile Sualtı Optik Haberleşme Sistemi ve Deniz Platf...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        26.10.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/stmden-euronavalda-iki-imza" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//SATM_BC_18_0621_siber_tehdit_duyuru_221018_THUMBNAIL_375x210px_375_210.jpg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Siber Tehdit Durum Raporu Temmuz – Eyl&#252;l 2018</h5>
+                                    <p><p>2018 yılı Temmuz – Eylül dönemine ilişkin olarak STM ThinkTech Siber Tehdit Durumu Raporumuzu yayınladık. 2018 yılının üçüncü çeyreğini kapsayan Raporda yer verdiğimiz siber saldırılar, zararlı...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        26.10.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/siber-tehdit-durum-raporu-temmuz-eylul-2018" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//PNFT_WebHaberGorseli_375_210.jpeg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Pakistan Denizde İkmal Gemisi&#39;ni Pakistan&#39;a teslim ettik.</h5>
+                                    <p><p>Savunma Sanayii’ne yön vererek yerli projelerin ihraç edilmesine öncülük eden Savunma Sanayii Başkanlığı liderliğinde milli imkânlarla STM tarafından tasarlanan Denizde İkmal Gemisi, Pakistan De...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        15.10.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/pakistan-denizde-ikmal-gemisini-pakistana-teslim-ettik" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//IMG_0972_375_210.JPG">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>STM ve SETA savunma teknolojilerinin mevcut durumu ve geleceği hakkında lisans ve y&#252;ksek lisans &#246;ğrencilerinin bilgi edinmesi i&#231;in ortak bir &#231;alışma ger&#231;ekleştirdi.</h5>
+                                    <p><p>STM ve SETA savunma teknolojilerinin mevcut durumu ve geleceği hakkında lisans ve yüksek lisans öğrencilerinin bilgi edinmesi için 17-21 Eylül tarihleri arasında ortak bir çalışma gerçekleştirdi...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        01.10.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/stm-ve-seta-savunma-teknolojilerinin-mevcut-durumu-ve-gelecegi-hakkinda-lisans-ve-yuksek-lisans-ogrencilerinin-bilgi-edinmesi-icin-ortak-bir-calisma-gerceklestirdi" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//Teknofest_webHaber_1_375_210.jpeg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Teknofest’te gen&#231;lerden STM’ye yoğun ilgi.</h5>
+                                    <p><p>Türkiye’nin ilk havacılık, uzay ve teknoloji festivali Teknofest, İstanbul 3. Havalimanı’nda 20-23 Eylül 2018 tarihinde düzenlendi.</p>
+</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        24.09.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/teknofestte-genclerden-stmye-yogun-ilgi" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//web_375_210.JPG">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>5. Milli Yatırımları ve Teknolojileri Konferansı”nda STM’nin denizaltı faaliyetleri anlattık.</h5>
+                                    <p></p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        21.09.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/5-milli-yatirimlari-ve-teknolojileri-konferansinda-stmnin-denizalti-faaliyetleri-anlattik" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//DSC07945_375_210.JPG">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Savunma Sanayii Başkanımız Prof. Dr. Sn. İsmail Demir şirketimizi ziyaret ederek yeni Genel M&#252;d&#252;r&#252;m&#252;z Murat İkinci&#39;ye g&#246;revinde başarılar diledi.</h5>
+                                    <p></p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        14.09.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/savunma-sanayii-baskanimiz-prof-dr-sn-ismail-demir-sirketimizi-ziyaret-ederek-yeni-genel-mudurumuz-murat-ikinciye-gorevinde-basarilar-diledi" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//SATM_HE_18_0599_CTF_2018_SM_TWITTER_1089x611px_02_ONLINE_140918_375_210.png">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>T&#252;rkiye’nin en kapsamlı siber m&#252;cadelesi STM Capture The Flag 2018 başvuruları başladı</h5>
+                                    <p></p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        14.09.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/turkiyenin-en-kapsamli-siber-mucadelesi-stm-capture-the-flag-2018-basvurulari-basladi" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//CoRe_Concept_WS_Group_Photo_375_210.jpg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>ThinkTech NATO &#231;alışmalarında aktif olarak yer alıyor.</h5>
+                                    <p></p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        13.09.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/thinktech-nato-calismalarinda-aktif-olarak-yer-aliyor" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//SATM_HE_18_0581_defensenews_top100_sm_375X210px_130818_375_210.png">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>D&#252;nyanın en prestijli savunma sanayi firmaları listesindeyiz</h5>
+                                    <p><p>Defense News dergisi tarafından her yıl bir önceki yılın savunma satışları baz alınarak yayımlanan ve dünyanın en prestijli savunma sanayisi listesi kabul edilen “Defense News Top 100” açıklandı...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        13.08.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/dunyanin-en-prestijli-savunma-sanayi-firmalari-listesindeyiz" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//stm_web_haber_375_210.JPG">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>STM ThinkTech ve Başkent &#220;niversitesi işbirliğinde “İleri Sağlık Teknolojileri Karar Destek Sistemi” ile ilgili &#231;alıştay ger&#231;ekleştirildi.</h5>
+                                    <p><p>Başkent Üniversitesi ile STM ThinkTech arasında imzalanan protokol çerçevesinde Başkent Üniversitesi Strateji ve Teknoloji Merkezi’nin faaliyetleri kapsamında başlatılan “İleri Sağlık Teknolojil...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        07.08.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/stm-thinktech-ve-baskent-universitesi-isbirliginde-ileri-saglik-teknolojileri-karar-destek-sistemi-ile-ilgili-calistay-gerceklestirildi" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//meb4_375_210.jpeg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Milli Eğitim Bakanımız Sn. Ziya Sel&#231;uk STM&#39;yi ziyaret etti.</h5>
+                                    <p></p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        02.08.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/milli-egitim-bakanimiz-sn-ziya-selcuk-stmyi-ziyaret-etti" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//internethaber_375_210.jpg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Siber Tehdit Durum Raporu Nisan – Haziran 2018</h5>
+                                    <p><p>2018 yılı Nisan– Haziran dönemine ilişkin olarak STM ThinkTech Siber Tehdit Durumu Raporumuzu yayınladık. 2018 yılının ikinci çeyreğini kapsayan Raporda yer verdiğimiz siber saldırılar, zararlı...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        21.07.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/siber-tehdit-durum-raporu-nisan-haziran-2018" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-mask">
+                                        <img src="/documents/_thumbs//Bilisim_375_210.jpg">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Bilişim500 Araştırmasına G&#246;re STM’nin Danışmanlık Kategorisinde T&#252;rkiye Birinciliği Devam Ediyor</h5>
+                                    <p><p>Bu yıl 19. kez gerçekleştirilen ve Türkiye’de bilişim sektörünü kapsayan Bilişim 500 Araştırması’nın sonuçları 5 Temmuz 2018 tarihinde İstanbul’da yapılan Bilişim500 Töreni’nde açıklandı. 2017 y...</p>
+                                </div>
+                                <div class="media-bottom">
+                                    <span class="date">
+                                        <span class="ui-icons ui-icons-clock-b"></span>
+                                        09.07.2018
+                                    </span>
+                                    <span class="more">
+                                        <a href="/tr/haberler/duyurular/bilisim500-arastirmasina-gore-stmnin-danismanlik-kategorisinde-turkiye-birinciligi-devam-ediyor" class="more">Devamını Oku<span class="ui-icons ui-icons-more"></span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="slick-arrows grey hidden-xs hidden-sm">
+                    <a href="#" class="slick-prev">
+                        <span class="ui-icons ui-icons-arrow-left grey"></span>
+                    </a>
+                    <a href="#" class="slick-next">
+                        <span class="ui-icons ui-icons-arrow-right grey"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-legend container">
+        <div class="in lm-b2"><a href="/tr/haberler/duyurular" class="btn btn-xs btn-primary">Tüm Duyurular</a></div>
+    </footer>
+
+                <div class="page-bg gradient-non">
+        <img src="/documents/Resimler/footer_ustu_resim/Dunya_05_2.jpg">
+    </div>
+
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="row content">
+                    <div class="col-sm-12 col-xs-12">
+                        
+
+        <div class="col-md-3 col-sm-4 col-xs-12 box">
+
+ <h5 class="title"><a href="/tr/hakkimizda">HAKKIMIZDA</a></h5>             
+
+            <div class="separator separator-headline"></div>
+            <ul>
+                    <li>
+                        <a href="/tr/hakkimizda/sirket-profili">Şirket Profili</a>
+                    </li>
+                    <li>
+                        <a href="/tr/hakkimizda/kalite-politikamiz">Kalite Politikamız</a>
+                    </li>
+                    <li>
+                        <a href="/tr/hakkimizda/yonetim-kurulu">Y&#246;netim Kurulu</a>
+                    </li>
+                    <li>
+                        <a href="/tr/hakkimizda/oduller-patentler">&#214;d&#252;ller/Patentler </a>
+                    </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12 box">
+
+ <h5 class="title"><a href="/tr/faaliyet-alanlari">FAALİYET ALANLARI</a></h5>             
+
+            <div class="separator separator-headline"></div>
+            <ul>
+                    <li>
+                        <a href="/tr/faaliyet-alanlari/muhendislik">M&#252;hendislik</a>
+                    </li>
+                    <li>
+                        <a href="/tr/faaliyet-alanlari/teknoloji">Teknoloji</a>
+                    </li>
+                    <li>
+                        <a href="/tr/faaliyet-alanlari/danismanlik">Danışmanlık</a>
+                    </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12 box">
+
+ <h5 class="title"><a href="/tr/yayinlar">YAYINLAR</a></h5>             
+
+            <div class="separator separator-headline"></div>
+            <ul>
+                    <li>
+                        <a href="/tr/yayinlar/makalelerraporlar">Makaleler/Raporlar</a>
+                    </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12 box">
+
+ <h5 class="title"><a href="/tr/iletisim">İLETİŞİM</a></h5>             
+
+            <div class="separator separator-headline"></div>
+            <ul>
+                    <li>
+                        <a href="/tr/iletisim/yerleskeler">Yerleşkeler</a>
+                    </li>
+                    <li>
+                        <a href="/tr/iletisim/tedarikci-firma-bilgilendirme-formu">Tedarik&#231;i Firma Bilgilendirme Formu</a>
+                    </li>
+                    <li>
+                        <a href="/tr/iletisim/mesaj-formu">Mesaj Formu</a>
+                    </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12 box">
+
+ <h5 class="title"><a href="/tr/urunler">&#220;R&#220;NLER</a></h5>             
+
+            <div class="separator separator-headline"></div>
+            <ul>
+                    <li>
+                        <a href="/tr/urunler/milgem">Milgem</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/focusflite">FocusFlıte</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/terraflite">TerraFlıte</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/aerotab">AeroTab</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/aerosuite">AeroSuıte</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/dikey-ruzgar-tuneli">Dikey R&#252;zgar T&#252;neli</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/overa">Overa</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/siber-fuzyon-merkezi">Siber F&#252;zyon Merkezi</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/siber-guvenlik-karar-destek-sistemi">Siber G&#252;venlik Karar Destek Sistemi</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/dar-duvar-arkasi-radar">DAR - Duvar Arkası Radar</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/opseye">OpsEye</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/tankom">TANKOM</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/aviyonik-islemci-unitesi">Aviyonik İşlemci &#220;nitesi</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/opsmet">OpsMet</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/mekansal-kontrat-yonetim-sistemi">Mekansal Kontrat Y&#246;netim Sistemi</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/fleetics">Fleetics</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/kargu">Kargu</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/alpagu">Alpagu</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/alpagu-blok-ii">Alpagu Blok II</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/togan">Togan</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/m-dar-mini-duvar-arkasi-radar">m-DAR (Mini Duvar Arkası Radar)</a>
+                    </li>
+                    <li>
+                        <a href="/tr/urunler/uhtes-uzaktan-engel-arkasi-hedef-tespit-sistemi">UHTES (Uzaktan Engel Arkası Hedef Tespit Sistemi)</a>
+                    </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12 box">
+
+ <h5 class="title"><a href="/tr/haberler">HABERLER</a></h5>             
+
+            <div class="separator separator-headline"></div>
+            <ul>
+                    <li>
+                        <a href="/tr/haberler/duyurular">Duyurular </a>
+                    </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12 box">
+
+ <h5 class="title"><a href="/tr/kariyer">KARİYER</a></h5>             
+
+            <div class="separator separator-headline"></div>
+            <ul>
+                    <li>
+                        <a href="/tr/kariyer/ik-politikamiz">İK Politikamız</a>
+                    </li>
+                    <li>
+                        <a href="/tr/kariyer/personel-profili">&#199;alışan Profili </a>
+                    </li>
+                    <li>
+                        <a href="/tr/kariyer/bize-katilin">Bize Katılın </a>
+                    </li>
+            </ul>
+        </div>
+
+
+                        
+    <div class="col-md-3 col-sm-4  col-xs-12 box social-media">
+        <h5 class="title">Sosyal Medya</h5>
+        <div class="separator separator-headline"></div>
+        <ul>
+                <li>
+                    <a href="https://twitter.com/STMDefence" target="_blank">
+                        <span class="ui-icons-social ui-icons-twitter"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/STMDefence/" target="_blank">
+                        <span class="ui-icons-social ui-icons-facebook"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCR_YoYwHcNuuxuy0pWjXQUQ" target="_blank">
+                        <span class="ui-icons-social ui-icons-youtube"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/224745?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A224745%2Cidx%3A3-3-6%2CtarId%3A1464088196280%2Ctas%3Astm" target="_blank">
+                        <span class="ui-icons-social ui-icons-linkedin"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/stmdefence/" target="_blank">
+                        <span class="ui-icons-social ui-icons-instagram"></span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+
+                        
+<script type="text/javascript">
+    
+    $(document).ready(function () {
+        $("#submitEBulten").click(function() {
+            $.ajax({
+                url: '/EBulten/EBultenKaydet',
+                type: 'POST',
+                data: {
+                    Mail: $('#Mail').val()
+                },
+                dataType: 'json',
+                success: function(json) {
+                    if (json.ResultType === 1) {
+                        $('#resultEBulten').text('Kayıt Başarılı').fadeIn(1000).delay(5000).fadeOut(1000);
+                        document.getElementById('EBultenformSTM').reset();
+                    } else {
+                        $('#resultEBulten').text(json.Text).fadeIn(1000).delay(5000).fadeOut(1000);
+                    }
+                },
+                error: function(e) {
+                    $('#resultEBulten').text(json.Text).fadeIn(1000).delay(5000).fadeOut(1000);
+                }
+            });
+            return false;
+        });
+    });
+</script>
+
+<div class="col-md-3 col-sm-4 col-xs-12 box newsletter">
+    <h5 class="title">E-Bülten Üyelik</h5>
+    <div class="separator separator-headline"></div>
+    <form class="form" id="EBultenformSTM" name="EBultenform">
+        <div class="input-group has-error has-success-">
+            <input type="email" class="form-control" id="Mail" name="Mail" placeholder="E-Posta Adresiniz" required>
+            <button type="submit" id="submitEBulten" class="input-group-addon">
+                <span class="ui-icons ui-icons-submit"></span>
+            </button>
+            <div id="resultEBulten" style="color:white; font-weight:bold;"></div>
+        </div>
+    </form>
+</div>
+                    </div>
+                </div>
+                <div class="row footer-bottom">
+                    
+
+    <div class="col-sm-6 col-xs-12 copy-link">
+            <a style="color: white" href="/tr/stm-akademi">Stm Akademi</a>
+            <a style="color: white" href="/tr/site-kullanim-sartlari">Site Kullanım Şartları</a>
+            <a style="color: white" href="/tr/gizlilik-ve-kisisel-verilerin-korunmasi">Gizlilik ve Kişisel Verilerin Korunması</a>
+            <a style="color: white" href="/tr/bilgi-toplumu-hizmetleri" target="_blank">Bilgi Toplumu Hizmetleri</a>
+    </div>
+
+<div class="col-sm-6 col-xs-12 copyright">
+    <span style="color: white">© Telif Hakkı 2018. Tüm Hakları Saklıdır.</span>
+</div>
+                    <a href="javascript:" class="back-to-top">
+                        <span class="ui-icons ui-icons-up"></span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="page-content col-xs-12 lm-t1" style="display: none;">
+        Object reference not set to an instance of an object.
+
+    </div>
+
+    <script>
+        var UNIGATE = {
+            current: {
+                langId: 'bf2689d9-071e-4a20-9450-b1dbdd39778f'
+            }
+        };
+    </script>
+
+    <script src="/Templates/Default/assets/js/app.min.js"></script>
+
+    
+</body>
+</html>
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'EKPNPDEKDBANCFIAJCEIJMNMNFCABLKNKEEKIMBKPFPHMPMCGPCGIADIJHEJHHFALLBIPFDCGDKBJKMPJLJDGGAGPEOALLGBAANANOKLIEMDGLBGAAJELKMFHGFNGAFJ',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,48,(latency>>8));str=f5_cspm.set_byte(str,49,(latency&0xff));str=f5_cspm.set_byte(str,43,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0769528536aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>
