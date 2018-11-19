@@ -11,10 +11,6 @@ Kaynak kodunu okuyan bir kisinin: generateFlag.py dosyasi icerisinde flag.txt'ni
 Ayni kodun tersini yazarak,
 cikti.txt'yi okuyan ve butun hex degerlerinden 0x01 cikaracak bir scriptin yazilmasi gerekmektedir. Bu script sonucunda flag.txt olusmaktadir.
 
-
-![Preview](s1.png)
-
-
 ```
 import binascii
 
@@ -28,5 +24,6 @@ for byte in lines:
 print bytes
 ```
 
+![Preview](s1.png)
 
 **Flag = STMCTF{TTMTYOKBAMBAMBAM}**
